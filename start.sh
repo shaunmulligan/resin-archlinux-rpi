@@ -7,4 +7,4 @@ echo "root:$PASSWD" | chpasswd
 dropbear -E -F &
 
 #start your application from here...
-python app/hello.py
+python2 app/hello.py
