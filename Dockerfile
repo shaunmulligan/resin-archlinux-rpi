@@ -1,7 +1,7 @@
 FROM shaunmulligan/arch-armv6h-resin
 
-RUN pacman -Sy --noconfirm python2 python2-flask
+RUN pacman -Sy --noconfirm python2 python2-flask dropbear
 
-COPY . /
+COPY . /app
 
-CMD ["python", "/hello.py"]
+CMD ["bash", "/app/start.sh"]
